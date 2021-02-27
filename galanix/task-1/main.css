@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+  font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc( 12px + 4 * ( (100vw - 320px) / 1600 ) );
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body header.header {
+  padding: 1rem 0;
+}
+body header.header h1.header__heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+body main section.flags {
+  padding: 3rem 1rem;
+}
+body main section.flags ul.flags__list {
+  max-width: 75%;
+  margin: auto;
+}
+body main section.flags ul.flags__list li.list__item {
+  text-align: center;
+}
+body main section.flags ul.flags__list li.list__item:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+body main section.flags ul.flags__list li.list__item figure.item__flag img.flag__image {
+  max-width: 100%;
+  width: 18.75rem;
+  margin-bottom: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem 0 #000;
+}
+body main section.flags ul.flags__list li.list__item figure.item__flag img.flag__image:hover {
+  transform: scale(1.25);
+}
+body main section.flags ul.flags__list li.list__item figure.item__flag img.flag__image:hover + .flag__description {
+  transform: scale(0);
+}
+body main section.flags ul.flags__list li.list__item figure.item__flag figcaption.flag__description {
+  font-size: 1.5rem;
+}
+body main section.flags ul.flags__list li.list__item figure.item__flag img.flag__image,
+body main section.flags ul.flags__list li.list__item figure.item__flag figcaption.flag__description {
+  transition: transform 0.5s, filter 0.5s;
+}
