@@ -1,0 +1,54 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>Подвойська Е.В.  ІО-04  Лаб.5 Вар.45</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script defer src="./form.js"></script>
+		<script defer src="./table.js"></script>
+	</head>
+	<body>
+<!-- Варіант 15 -->
+		<main class="main-container">
+			<div class="task-container">
+				<form class="form">
+					<div class="form__item">
+						<label for="credentials">ПІБ</label>
+						<input
+							placeholder="ПІБ"
+							type="text"
+							name="credentials"
+							id="credentials"
+						/>
+
+					</div>
+					<div class="form__item">
+						<label for="variant">Варіант</label>
+						<input placeholder="Варіант" type="number" name="variant" id="variant" />
+					</div>
+          <div class="form__item">
+						<label for="group">Група</label>
+						<input placeholder="Група" type="text" name="group" id="group" />
+					</div>
+					<div class="form__item">
+						<label for="faculty">Факультет</label>
+						<input placeholder="Факультет" type="text" name="faculty" id="faculty" />
+					</div>
+					<div class="form__item">
+						<label for="birth">date</label>
+						<input placeholder="Дата народження" type="string" name="birth" id="birth" />
+					</div>
+					<div class="form__item">
+						<input type="submit" value="Підтвердити" />
+					</div>
+				</form>
+				<div class="form-output-container"></div>
+			</div>
+			<div class="task-container">
+				<input type="color" class="color-picker" />
+				<table class="table"></table>
+			</div>
+		</main>
+	</body>
+</html>
